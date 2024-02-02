@@ -1,20 +1,24 @@
 {
   "name": "auto-reveal",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pichfl/auto-reveal.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
   "main": "index.js",
   "bin": {
     "auto-reveal": "./bin/auto-reveal.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "format": "biome check --apply .",
-    "lint": "biome check ."
+    "lint": "biome check .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "type": "module",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "reveal.js": "^5.0.2",
     "vite": "^5.0.4",
@@ -22,7 +26,8 @@
     "vite-plugin-static-copy": "^1.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.4.1"
+    "@biomejs/biome": "^1.4.1",
+    "release-plan": "^0.6.0"
   },
   "engines": {
     "node": ">=20"
