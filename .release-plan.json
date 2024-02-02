@@ -1,0 +1,25 @@
+{
+  "solution": {
+    "auto-reveal": {
+      "impact": "minor",
+      "oldVersion": "0.0.0",
+      "newVersion": "0.1.0",
+      "constraints": [
+        {
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :bug: Bug Fix"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        }
+      ],
+      "pkgJSONPath": "./package.json"
+    }
+  },
+  "description": "## Release (2024-02-02)\n\nauto-reveal 0.1.0 (minor)\n\n#### :rocket: Enhancement\n* `auto-reveal`\n  * [#3](https://github.com/pichfl/auto-reveal/pull/3) implement build ([@mansona](https://github.com/mansona))\n  * [#1](https://github.com/pichfl/auto-reveal/pull/1) add the slides folder to the server watchers ([@mansona](https://github.com/mansona))\n\n#### :bug: Bug Fix\n* `auto-reveal`\n  * [#2](https://github.com/pichfl/auto-reveal/pull/2) fix serving from the theme folder ([@mansona](https://github.com/mansona))\n\n#### :house: Internal\n* `auto-reveal`\n  * [#4](https://github.com/pichfl/auto-reveal/pull/4) setup release-plan ([@mansona](https://github.com/mansona))\n\n#### Committers: 1\n- Chris Manson ([@mansona](https://github.com/mansona))\n"
+}
