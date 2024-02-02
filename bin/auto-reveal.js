@@ -2,7 +2,7 @@
 
 import path from 'node:path';
 import { fileURLToPath } from 'url';
-import { createServer } from 'vite';
+import { createServer, build } from 'vite';
 import { ViteEjsPlugin as viteEjsPlugin } from 'vite-plugin-ejs';
 import { getTheme, getTitle } from '../lib/utils.js';
 
@@ -10,31 +10,36 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const argv = process.argv.slice(2);
 const cwd = process.cwd();
 
-getTheme();
+const themeFolder = path.dirname(getTheme());
+const config = {
+  configFile: false,
+  root: path.join(__dirname, '..', 'src'),
+  publicDir: path.join(cwd, 'public'),
+  server: {
+    port: 1337,
+    fs: {
+      allow: [themeFolder, '.']
+    }
+  },
+  plugins: [
+    viteEjsPlugin({
+      title: getTitle(),
+    }),
+  ],
+  resolve: {
+    alias: {
+      slides: path.join(cwd, 'slides'),
+      '@theme': themeFolder,
+    },
+  },
+  build: {
+    outDir: path.join(cwd, 'dist')
+  }
+};
 
 async function start() {
-  const themeFolder = path.dirname(getTheme());
-  const server = await createServer({
-    configFile: false,
-    root: path.join(__dirname, '..', 'src'),
-    server: {
-      port: 1337,
-      fs: {
-        allow: [themeFolder, '.']
-      }
-    },
-    plugins: [
-      viteEjsPlugin({
-        title: getTitle(),
-      }),
-    ],
-    resolve: {
-      alias: {
-        slides: path.join(cwd, 'slides'),
-        '@theme': themeFolder,
-      },
-    },
-  });
+  
+  const server = await createServer(config);
 
   server.watcher.add(path.join(cwd, 'slides'));
 
@@ -43,10 +48,8 @@ async function start() {
   server.bindCLIShortcuts({ print: true });
 }
 
-async function build() {}
-
 if (!argv[0] || argv[0] === 'start') {
   start();
 } else if (argv[0] === 'build') {
-  // Build for production
+  build(config)
 }
