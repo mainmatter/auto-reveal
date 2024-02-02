@@ -1,0 +1,30 @@
+{
+  "name": "auto-reveal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "auto-reveal": "./bin/auto-reveal.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "biome check --apply .",
+    "lint": "biome check ."
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "reveal.js": "^5.0.2",
+    "vite": "^5.0.4",
+    "vite-plugin-ejs": "^1.7.0",
+    "vite-plugin-static-copy": "^1.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.4.1"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
