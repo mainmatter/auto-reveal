@@ -13,11 +13,15 @@ const cwd = process.cwd();
 getTheme();
 
 async function start() {
+  const themeFolder = path.dirname(getTheme());
   const server = await createServer({
     configFile: false,
     root: path.join(__dirname, '..', 'src'),
     server: {
       port: 1337,
+      fs: {
+        allow: [themeFolder, '.']
+      }
     },
     plugins: [
       viteEjsPlugin({
@@ -27,7 +31,7 @@ async function start() {
     resolve: {
       alias: {
         slides: path.join(cwd, 'slides'),
-        '@theme': getTheme(),
+        '@theme': themeFolder,
       },
     },
   });
