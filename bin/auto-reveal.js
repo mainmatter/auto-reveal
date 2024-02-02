@@ -32,6 +32,8 @@ async function start() {
     },
   });
 
+  server.watcher.add(path.join(cwd, 'slides'));
+
   await server.listen();
   server.printUrls();
   server.bindCLIShortcuts({ print: true });
