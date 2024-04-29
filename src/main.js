@@ -36,11 +36,24 @@ document.querySelector('.slides').innerHTML = sections.join('');
 
 const deck = new Reveal();
 
-deck.initialize({
+const defaultConfig = {
 	hash: true,
 	width: 1280,
 	height: 960,
 	margin: 0.1,
 	highlight: {},
 	plugins: [Markdown, Highlight, Notes],
-});
+};
+
+let themeConfig = {};
+
+try {
+	const findingConfig = import.meta.glob('@theme/config.json', {eager: true});
+	const [filename] = Object.keys(findingConfig);
+
+	if (filename) {
+		themeConfig = findingConfig[filename]
+	}
+} catch {}
+
+deck.initialize({...defaultConfig, ...themeConfig});
