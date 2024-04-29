@@ -2,6 +2,7 @@ import Reveal from 'reveal.js';
 import Highlight from 'reveal.js/plugin/highlight/highlight.esm.js';
 import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js';
 import Notes from 'reveal.js/plugin/notes/notes.esm.js';
+import frontMatter from 'front-matter';
 
 import 'reveal.js/dist/reveal.css';
 import 'reveal.js/plugin/highlight/monokai.css'
@@ -20,17 +21,36 @@ const sortedMarkdownFiles = Object.entries(markdownFiles).sort(([a], [b]) => {
 	return Number(aNumb) - Number(bNumb);
 });
 
-const sections = sortedMarkdownFiles.map(
-	([, content]) => `
+const sections = sortedMarkdownFiles.map(([, content]) => { 
+	const fm = frontMatter(content);
+	const { body, attributes: { notes } } = fm
+
+	const noteSeparator = 'Note:';
+
+	let notesBlock;
+
+	if (notes) {
+		notesBlock = `
+${noteSeparator}
+
+${notes}
+	`;
+	}
+
+	return `
 	<section 
 		data-markdown
 		data-separator="^\n___\n$"
 		data-separator-vertical="^\n---\n$"
-		data-separator-notes="^Note:"
+		data-separator-notes="^${noteSeparator}"
 	>
-		<textarea data-template>${content}</textarea>
+		<textarea data-template>
+			${body}
+			${notesBlock}
+		</textarea>
 	</section >
-`,
+`
+}
 );
 
 document.querySelector('.slides').innerHTML = sections.join('');
