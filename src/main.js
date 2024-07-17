@@ -3,8 +3,8 @@ import Highlight from 'reveal.js/plugin/highlight/highlight.esm.js';
 import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js';
 import Notes from 'reveal.js/plugin/notes/notes.esm.js';
 
-import '@theme';
 import 'reveal.js/dist/reveal.css';
+import '@theme';
 
 const markdownFiles = import.meta.glob('slides/*.md', {
 	as: 'raw',
