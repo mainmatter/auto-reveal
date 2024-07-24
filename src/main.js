@@ -4,10 +4,12 @@ import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js';
 import Notes from 'reveal.js/plugin/notes/notes.esm.js';
 
 import 'reveal.js/dist/reveal.css';
+
 import '@theme';
 
 const markdownFiles = import.meta.glob('slides/*.md', {
-	as: 'raw',
+	query: '?raw',
+	import: 'default',
 	eager: true,
 });
 
@@ -48,12 +50,12 @@ const defaultConfig = {
 let themeConfig = {};
 
 try {
-	const findingConfig = import.meta.glob('@theme/config.json', {eager: true});
+	const findingConfig = import.meta.glob('@theme/config.json', { eager: true });
 	const [filename] = Object.keys(findingConfig);
 
 	if (filename) {
-		themeConfig = findingConfig[filename]
+		themeConfig = findingConfig[filename];
 	}
 } catch {}
 
-deck.initialize({...defaultConfig, ...themeConfig});
+deck.initialize({ ...defaultConfig, ...themeConfig });
