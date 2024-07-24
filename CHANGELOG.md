@@ -1,4 +1,14 @@
 # Changelog
+## Release (2024-07-24)
+
+auto-reveal 0.2.1 (patch)
+
+#### :bug: Bug Fix
+* `auto-reveal`
+  * [#12](https://github.com/pichfl/auto-reveal/pull/12) Remove deprecation from import.meta.glob ([@pichfl](https://github.com/pichfl))
+
+#### Committers: 1
+- Florian Pichler ([@pichfl](https://github.com/pichfl))
 ## Release (2024-07-17)
 
 auto-reveal 0.2.0 (minor)
