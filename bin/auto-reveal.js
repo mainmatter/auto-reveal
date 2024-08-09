@@ -2,12 +2,12 @@
 
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { Command } from 'commander';
 import { build, createServer } from 'vite';
 import { ViteEjsPlugin as viteEjsPlugin } from 'vite-plugin-ejs';
 import { getTheme, getTitle } from '../lib/utils.js';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
-const argv = process.argv.slice(2);
 const cwd = process.cwd();
 
 const themeFolder = path.dirname(getTheme());
@@ -47,8 +47,33 @@ async function start() {
 	server.bindCLIShortcuts({ print: true });
 }
 
-if (!argv[0] || argv[0] === 'start') {
-	start();
-} else if (argv[0] === 'build') {
-	build(config);
-}
+const program = new Command();
+
+program.name(process.env.npm_package_name);
+program.description(process.env.npm_package_description);
+program.version(process.env.npm_package_version);
+
+program
+	.command('start', {
+		isDefault: true,
+	})
+	.description('Live-reloading server for your slides.')
+	.action(start);
+
+program
+	.command('build')
+	.description('Build a static copy of your presentation.')
+	.option('-o, --outDir <path>', 'Output directory', config.build.outDir)
+	.action((options) =>
+		build({
+			...config,
+			build: {
+				...config.build,
+				outDir: options.outDir
+					? path.resolve(cwd, options.outDir)
+					: config.build.outDir,
+			},
+		}),
+	);
+
+program.parse();
