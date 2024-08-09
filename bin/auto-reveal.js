@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import path from 'node:path';
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from 'node:url';
 import { build, createServer } from 'vite';
 import { ViteEjsPlugin as viteEjsPlugin } from 'vite-plugin-ejs';
 import { getTheme, getTitle } from '../lib/utils.js';

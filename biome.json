@@ -21,6 +21,7 @@
 			"node_modules",
 			"dist",
 			".release-plan.json",
+			"package.json",
 			"CHANGELOG.md",
 			"pnpm-lock.yaml"
 		]
