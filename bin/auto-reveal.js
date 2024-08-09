@@ -15,6 +15,7 @@ const config = {
 	configFile: false,
 	root: path.join(__dirname, '..', 'src'),
 	publicDir: path.join(cwd, 'public'),
+	base: './',
 	server: {
 		port: 1337,
 		fs: {
