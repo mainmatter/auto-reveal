@@ -1,6 +1,8 @@
 # auto-reveal
 
-Create Reveal.js presentations from markdown files.
+**The command-line interface for reveal.js presentations.**
+
+Create presentations from Markdown files and let auto-reveal worry about configuration, themes and setup so you can focus on your content.
 
 ## Installation
 
@@ -31,7 +33,7 @@ To get a live-reloading preview of your presentation, run `npm run start`.
 
 ### Slides
 
-Markdown files are sorted by filename. `001-slide.md` will be the first slide,
+Markdown files are sorted alphabetically by filename. `001-slide.md` will be the first slide,
 `002-slide.md` the second, and so on.
 
 Each Markdown file will generate a horizontal slide. If you want to create
@@ -48,7 +50,7 @@ npm add auto-reveal-theme-mainmatter
 ```
 
 If no theme is installed, the default Reveal.js `simple` theme will be used
-instead.
+by default.
 
 ### Document Title
 
@@ -69,13 +71,31 @@ from the presentation.
 
 ### Additional Configuration
 
-There is none.
+There is none (yet). 
 
 ## Development
+
+### Contributing
 
 This project uses Vite under the hood. Linting and formatting is handled by
 Biome.
 
-### Roadmap
+### Building themes
 
-- [ ] Add configuration options
+There is no full guide yet. Please look at [auto-reveal-theme-mainmatter][theme-mainmatter] for a working example.
+
+A theme package for auto-reveal should contain: 
+
+- mandatory: `package.json` with these fields:
+  - `"main": "theme.css"`
+  - recommended: `"keywords": ["auto-reveal-theme"]`
+- mandatoriy: `theme.css` with your theme styles
+- optional: `config.json` with Reveal.js configuration options
+
+## License
+
+auto-reveal is developed by and © [Mainmatter GmbH][mainmatter] and contributors. It is released under the [MIT License][license].
+
+[theme-mainmatter]: https://github.com/mainmatter/auto-reveal-theme-mainmatter
+[mainmatter]: https://mainmatter.com
+[license]: ./LICENSE
