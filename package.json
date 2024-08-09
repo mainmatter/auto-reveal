@@ -5,7 +5,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git@github.com:pichfl/auto-reveal.git"
+    "url": "git@github.com:mainmatter/auto-reveal.git"
   },
   "license": "ISC",
   "author": "",
@@ -27,8 +27,9 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.4.1",
-    "release-plan": "^0.6.0"
+    "release-plan": "^0.9.0"
   },
+  "packageManager": "pnpm@9.5.0",
   "engines": {
     "node": ">=20"
   }
