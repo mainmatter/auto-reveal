@@ -10,7 +10,7 @@ importers:
     dependencies:
       reveal.js:
         specifier: ^5.0.2
-        version: 5.0.2
+        version: 5.1.0
       vite:
         specifier: ^5.0.4
         version: 5.0.4(@types/node@20.11.16)
@@ -1111,8 +1111,8 @@ packages:
     resolution: {integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
 
-  reveal.js@5.0.2:
-    resolution: {integrity: sha512-G5dhsr/2wormdrYPtZBfRamvnPrHc/8TtYVH3EpIzfMyKSiTprFwn61nFZbcmeK4iKKdLq2MMiiMNqlRmkBU4A==}
+  reveal.js@5.1.0:
+    resolution: {integrity: sha512-KDt7m0+xwKV6nAZt4CNPVFBf42sTKRQapg0bGGKB5PKO5XvChnMfwlZkybydHiQJ7p5+6LbHKRGrhXODdoNIaA==}
     engines: {node: '>=18.0.0'}
 
   rimraf@3.0.2:
@@ -2455,7 +2455,7 @@ snapshots:
 
   reusify@1.0.4: {}
 
-  reveal.js@5.0.2: {}
+  reveal.js@5.1.0: {}
 
   rimraf@3.0.2:
     dependencies:
