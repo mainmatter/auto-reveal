@@ -63,6 +63,17 @@ program
 program
 	.command('build')
 	.description('Build a static copy of your presentation.')
-	.action(() => build(config));
+	.option('-o, --outDir <path>', 'Output directory', config.build.outDir)
+	.action((options) =>
+		build({
+			...config,
+			build: {
+				...config.build,
+				outDir: options.outDir
+					? path.resolve(cwd, options.outDir)
+					: config.build.outDir,
+			},
+		}),
+	);
 
 program.parse();
