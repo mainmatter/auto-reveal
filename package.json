@@ -1,8 +1,12 @@
 {
   "name": "auto-reveal",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "The command-line interface for reveal.js presentations.",
-  "keywords": ["reveal.js", "cli", "markdown"],
+  "keywords": [
+    "reveal.js",
+    "cli",
+    "markdown"
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:mainmatter/auto-reveal.git"
