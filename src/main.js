@@ -13,13 +13,12 @@ const markdownFiles = import.meta.glob('slides/*.md', {
 	eager: true,
 });
 
-const sortedMarkdownFiles = Object.entries(markdownFiles).sort(([a], [b]) => {
-	const regex = /slides\/(\d+)-/;
-	const [, aNumb] = regex.exec(a);
-	const [, bNumb] = regex.exec(b);
-
-	return Number(aNumb) - Number(bNumb);
-});
+const sortedMarkdownFiles = Object.entries(markdownFiles).sort(([a], [b]) =>
+	a.localeCompare(b, undefined, {
+		numeric: true,
+		sensitivity: 'base',
+	}),
+);
 
 const sections = sortedMarkdownFiles.map(
 	([, content]) => `
