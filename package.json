@@ -34,7 +34,7 @@
     "@biomejs/biome": "1.8.3",
     "release-plan": "0.9.2"
   },
-  "packageManager": "pnpm@9.7.0",
+  "packageManager": "pnpm@9.11.0",
   "engines": {
     "node": ">=20"
   }
