@@ -1,5 +1,18 @@
 # Changelog
 
+## Release (2024-10-07)
+
+auto-reveal 0.4.0 (minor)
+
+#### :rocket: Enhancement
+* `auto-reveal`
+  * [#43](https://github.com/mainmatter/auto-reveal/pull/43) find themes in dev dependencies too ([@mansona](https://github.com/mansona))
+  * [#38](https://github.com/mainmatter/auto-reveal/pull/38) Use localeCompare instead of custom regex ([@pichfl](https://github.com/pichfl))
+
+#### Committers: 2
+- Chris Manson ([@mansona](https://github.com/mansona))
+- Florian Pichler ([@pichfl](https://github.com/pichfl))
+
 ## Release (2024-08-10)
 
 auto-reveal 0.3.0 (minor)
