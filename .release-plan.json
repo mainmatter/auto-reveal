@@ -1,17 +1,8 @@
 {
   "solution": {
     "auto-reveal": {
-      "impact": "minor",
-      "oldVersion": "0.3.0",
-      "newVersion": "0.4.0",
-      "constraints": [
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        }
-      ],
-      "pkgJSONPath": "./package.json"
+      "oldVersion": "0.4.0"
     }
   },
-  "description": "## Release (2024-10-07)\n\nauto-reveal 0.4.0 (minor)\n\n#### :rocket: Enhancement\n* `auto-reveal`\n  * [#43](https://github.com/mainmatter/auto-reveal/pull/43) find themes in dev dependencies too ([@mansona](https://github.com/mansona))\n  * [#38](https://github.com/mainmatter/auto-reveal/pull/38) Use localeCompare instead of custom regex ([@pichfl](https://github.com/pichfl))\n\n#### Committers: 2\n- Chris Manson ([@mansona](https://github.com/mansona))\n- Florian Pichler ([@pichfl](https://github.com/pichfl))\n"
+  "description": "\n\n\n\n"
 }

@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2024-10-07)
 
 auto-reveal 0.4.0 (minor)
