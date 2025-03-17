@@ -9,19 +9,23 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:mainmatter/auto-reveal.git"
+    "url": "git+ssh://git@github.com/mainmatter/auto-reveal.git"
   },
+  "bugs": {
+    "url": "https://github.com/mainmatter/auto-reveal/issues"
+  },
+  "homepage": "https://github.com/mainmatter/auto-reveal#readme",
   "license": "ISC",
   "author": "",
   "type": "module",
   "main": "index.js",
   "bin": {
-    "auto-reveal": "./bin/auto-reveal.js"
+    "auto-reveal": "bin/auto-reveal.js"
   },
   "scripts": {
     "format": "biome check --write .",
     "lint": "biome check .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "dependencies": {
     "commander": "^13.1.0",
@@ -32,7 +36,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "release-plan": "0.16.0"
+    "release-plan": "0.16.0",
+    "vitest": "^2.1.8"
   },
   "packageManager": "pnpm@10.6.4",
   "engines": {
@@ -41,5 +46,8 @@
   "volta": {
     "node": "22.14.0",
     "pnpm": "10.6.4"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
