@@ -37,7 +37,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "release-plan": "0.16.0",
-    "vitest": "^2.1.8"
+    "vitest": "^3.0.0"
   },
   "packageManager": "pnpm@10.6.5",
   "engines": {
