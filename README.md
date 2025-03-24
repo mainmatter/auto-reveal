@@ -18,7 +18,7 @@ Add this to your `package.json`:
 ```json
 {
   "scripts": {
-    "start": "auto-reveal",
+    "start": "auto-reveal start",
     "build": "auto-reveal build"
   }
 }

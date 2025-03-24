@@ -46,15 +46,16 @@ const defaultConfig = {
 	plugins: [Markdown, Highlight, Notes],
 };
 
-let themeConfig = {};
+const themeConfig = {};
 
-try {
-	const findingConfig = import.meta.glob('@theme/config.json', { eager: true });
-	const [filename] = Object.keys(findingConfig);
+// FIXME: This fails hard if no config is present
+// try {
+// 	const findingConfig = import.meta.glob('@theme/config.json', { eager: true });
+// 	const [filename] = Object.keys(findingConfig);
 
-	if (filename) {
-		themeConfig = findingConfig[filename];
-	}
-} catch {}
+// 	if (filename) {
+// 		themeConfig = findingConfig[filename];
+// 	}
+// } catch {}
 
 deck.initialize({ ...defaultConfig, ...themeConfig });
