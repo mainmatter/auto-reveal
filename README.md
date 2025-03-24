@@ -31,6 +31,8 @@ will output the presentation to `/dist` when running `npm run build`.
 
 To get a live-reloading preview of your presentation, run `npm run start`.
 
+You can learn more about the available commands and options by running `npx auto-reveal --help`.
+
 ### Slides
 
 Markdown files are sorted alphabetically by filename. `001-slide.md` will be the first slide,
@@ -71,7 +73,7 @@ from the presentation.
 
 ### Additional Configuration
 
-There is none (yet). 
+There is none (yet).
 
 ## Development
 
@@ -84,7 +86,7 @@ Biome.
 
 There is no full guide yet. Please look at [auto-reveal-theme-mainmatter][theme-mainmatter] for a working example.
 
-A theme package for auto-reveal should contain: 
+A theme package for auto-reveal should contain:
 
 - mandatory: `package.json` with these fields:
   - `"main": "theme.css"`
