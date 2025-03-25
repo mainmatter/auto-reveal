@@ -16,6 +16,12 @@ describe('auto-reveal CLI', () => {
 		vi.clearAllMocks();
 	});
 
+	test('Using auto-reveal without any command triggers the start function', async () => {
+		await program.parseAsync(['node', 'auto-reveal']);
+
+		expect(start).toBeCalledTimes(1);
+	});
+
 	test('Using auto-reveal start triggers the start function', async () => {
 		await program.parseAsync(['node', 'auto-reveal', 'start']);
 
