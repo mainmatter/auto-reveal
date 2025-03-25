@@ -1,5 +1,30 @@
 # Changelog
 
+## Release (2025-03-25)
+
+* auto-reveal 0.5.0 (minor)
+
+#### :rocket: Enhancement
+* `auto-reveal`
+  * [#65](https://github.com/mainmatter/auto-reveal/pull/65) Allow auto-reveal to launch without relying on installing a theme ([@pichfl](https://github.com/pichfl))
+  * [#64](https://github.com/mainmatter/auto-reveal/pull/64) Make port configurable ([@pichfl](https://github.com/pichfl))
+  * [#59](https://github.com/mainmatter/auto-reveal/pull/59) Update dependencies ([@pichfl](https://github.com/pichfl))
+
+#### :bug: Bug Fix
+* `auto-reveal`
+  * [#68](https://github.com/mainmatter/auto-reveal/pull/68) Make start the default command for auto-reveal ([@pichfl](https://github.com/pichfl))
+  * [#56](https://github.com/mainmatter/auto-reveal/pull/56) Bugfix: Don't crash when devDependencies are not defined ([@pichfl](https://github.com/pichfl))
+
+#### :house: Internal
+* `auto-reveal`
+  * [#66](https://github.com/mainmatter/auto-reveal/pull/66) add a basic default theme test ([@mansona](https://github.com/mansona))
+  * [#63](https://github.com/mainmatter/auto-reveal/pull/63) Re-organize commander code ([@pichfl](https://github.com/pichfl))
+  * [#60](https://github.com/mainmatter/auto-reveal/pull/60) Add vitest ([@pichfl](https://github.com/pichfl))
+
+#### Committers: 2
+- Chris Manson ([@mansona](https://github.com/mansona))
+- Florian Pichler ([@pichfl](https://github.com/pichfl))
+
 ## Release (2024-10-07)
 
 auto-reveal 0.4.0 (minor)
