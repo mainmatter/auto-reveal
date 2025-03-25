@@ -51,7 +51,7 @@ automatically be used for your presentation. For example, to use the
 npm add auto-reveal-theme-mainmatter
 ```
 
-If no theme is installed, the default Reveal.js `simple` theme will be used
+If no theme is installed, the default Reveal.js `black` theme will be used
 by default.
 
 ### Document Title
@@ -79,8 +79,8 @@ There is none (yet).
 
 ### Contributing
 
-This project uses Vite under the hood. Linting and formatting is handled by
-Biome.
+This project uses [Vite](https://vite.dev) under the hood. Linting and formatting is handled by
+[Biome](https://biomejs.dev).
 
 ### Building themes
 
