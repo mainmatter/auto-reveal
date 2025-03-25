@@ -6,6 +6,7 @@ import Notes from 'reveal.js/plugin/notes/notes.esm.js';
 import 'reveal.js/dist/reveal.css';
 
 import '@theme';
+import themeConfig from 'virtual:auto-reveal/config';
 
 const markdownFiles = import.meta.glob('slides/*.md', {
 	query: '?raw',
@@ -22,7 +23,7 @@ const sortedMarkdownFiles = Object.entries(markdownFiles).sort(([a], [b]) =>
 
 const sections = sortedMarkdownFiles.map(
 	([, content]) => `
-	<section 
+	<section
 		data-markdown
 		data-separator="^\n___\n$"
 		data-separator-vertical="^\n---\n$"
@@ -37,25 +38,21 @@ document.querySelector('.slides').innerHTML = sections.join('');
 
 const deck = new Reveal();
 
-const defaultConfig = {
+const preConfig = {
 	hash: true,
 	width: 1280,
 	height: 960,
 	margin: 0.1,
 	highlight: {},
+};
+
+const afterConfig = {
+	// Ensure plugins are always loaded and not touched by the theme configuraiton
 	plugins: [Markdown, Highlight, Notes],
 };
 
-const themeConfig = {};
-
-// FIXME: This fails hard if no config is present
-// try {
-// 	const findingConfig = import.meta.glob('@theme/config.json', { eager: true });
-// 	const [filename] = Object.keys(findingConfig);
-
-// 	if (filename) {
-// 		themeConfig = findingConfig[filename];
-// 	}
-// } catch {}
-
-deck.initialize({ ...defaultConfig, ...themeConfig });
+deck.initialize({
+	...preConfig,
+	...themeConfig,
+	...afterConfig,
+});
