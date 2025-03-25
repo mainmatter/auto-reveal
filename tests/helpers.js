@@ -1,5 +1,5 @@
-import { readFileSync } from 'node:fs';
-import { join } from 'node:path';
+import fs from 'node:fs';
+import path from 'node:path';
 import { Project } from 'fixturify-project';
 import { globby } from 'globby';
 
@@ -9,7 +9,12 @@ export async function makeProject({ files = {}, theme } = {}) {
 	});
 
 	// setup the current auto-reveal as a dev dependency to link its bin
-	project.linkDevDependency('auto-reveal', { resolveName: '.', baseDir: '.' });
+	project.linkDevDependency('auto-reveal', { baseDir: '.', resolveName: '.' });
+
+	project.linkDevDependency('reveal.js', {
+		baseDir: '.',
+		resolveName: 'reveal.js',
+	});
 
 	project.addDependency(theme);
 
@@ -21,5 +26,5 @@ export async function makeProject({ files = {}, theme } = {}) {
 export async function getFileContents(glob, cwd) {
 	// there should only be one file that matches this glob
 	const [indexCss] = await globby([glob], { cwd });
-	return readFileSync(join(cwd, indexCss), 'utf8');
+	return fs.readFileSync(path.join(cwd, indexCss), 'utf8');
 }
