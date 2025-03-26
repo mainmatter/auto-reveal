@@ -1,6 +1,6 @@
 import { createServer } from 'vite';
 import { afterEach, describe, expect, test, vi } from 'vitest';
-import { start } from '../lib/commands/start.js';
+import { start } from '../../lib/commands/start.js';
 
 vi.mock('vite', () => ({
 	createServer: vi.fn(() => ({
