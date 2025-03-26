@@ -20,7 +20,7 @@
   "type": "module",
   "main": "index.js",
   "bin": {
-    "auto-reveal": "bin/auto-reveal.js"
+    "auto-reveal": "bin/auto-reveal"
   },
   "scripts": {
     "format": "biome check --write .",
@@ -29,7 +29,11 @@
   },
   "dependencies": {
     "commander": "^13.1.0",
+    "fixturify": "^3.0.0",
+    "lodash-es": "^4.17.21",
+    "mkdirp": "^3.0.1",
     "reveal.js": "5.2.0",
+    "tmp": "^0.2.3",
     "vite": "6.2.3",
     "vite-plugin-ejs": "1.7.0",
     "vite-plugin-static-copy": "2.3.0"

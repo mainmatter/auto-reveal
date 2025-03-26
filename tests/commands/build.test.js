@@ -1,6 +1,6 @@
 import { build as viteBuild } from 'vite';
 import { afterEach, describe, expect, test, vi } from 'vitest';
-import { build } from '../lib/commands/build.js';
+import { build } from '../../lib/commands/build.js';
 
 vi.mock('vite', () => ({
 	build: vi.fn(),
