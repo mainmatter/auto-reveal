@@ -14,6 +14,9 @@ importers:
       fixturify:
         specifier: ^3.0.0
         version: 3.0.0
+      globby:
+        specifier: ^14.1.0
+        version: 14.1.0
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
@@ -45,9 +48,6 @@ importers:
       fixturify-project:
         specifier: ^7.1.3
         version: 7.1.3
-      globby:
-        specifier: ^14.1.0
-        version: 14.1.0
       release-plan:
         specifier: 0.16.0
         version: 0.16.0
