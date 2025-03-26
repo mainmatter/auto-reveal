@@ -1,28 +1,24 @@
 # auto-reveal
 
-**The command-line interface for reveal.js presentations.**
+**The command-line interface for [reveal.js](https://revealjs.com/) presentations.**
 
 Create presentations from Markdown files and let auto-reveal worry about configuration, themes and setup so you can focus on your content.
 
-## Installation
+## Requirements
 
-```bash
-# Create an empty node project
-npm init
-# Add auto-reveal
-npm add auto-reveal
+- Install [Node.js](https://nodejs.org/) (includes npm)
+
+## Your first presentation
+
+```sh
+# Setup `./slides/000.md` and `package.json`
+npx auto-reveal init
+
+# Start the presentation server
+npm start
 ```
 
-Add this to your `package.json`:
-
-```json
-{
-  "scripts": {
-    "start": "auto-reveal start",
-    "build": "auto-reveal build"
-  }
-}
-```
+Open your browser at [localhost:1337](http://localhost:1337).
 
 ## Usage
 
