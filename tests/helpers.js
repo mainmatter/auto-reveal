@@ -40,6 +40,11 @@ export async function makeFolder({ files } = {}) {
 
 export async function getFileContents(glob, cwd) {
 	// there should only be one file that matches this glob
-	const [indexCss] = await globby([glob], { cwd });
-	return fs.readFileSync(path.join(cwd, indexCss), 'utf8');
+	const [firstFile] = await globby([glob], { cwd });
+
+	if (!firstFile) {
+		throw new Error(`No file found matching glob ${glob}`);
+	}
+
+	return fs.readFileSync(path.join(cwd, firstFile), 'utf8');
 }
