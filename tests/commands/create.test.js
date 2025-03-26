@@ -17,7 +17,7 @@ describe('create command tests', () => {
 
 		expect(result.exitCode).to.equal(0);
 		expect(result.stdout).toStrictEqual(
-			`\nauto-reveal\n\n  Setting up your presentation in \n  ${cwd}\n\n  Hint: Create new slides by running "auto-reveal add". \n  Hint: Create new vertical slides by adding "---" inside your slide markdown file.\n`,
+			`\nauto-reveal\n\n  Setting up your presentation in\n  ${cwd}\n\n  Hint: Create new slides by running "auto-reveal add".\n  Hint: Create new vertical slides by adding "---" inside your slide markdown file.\n`,
 		);
 		expect(fixtures).toStrictEqual({
 			public: {},
