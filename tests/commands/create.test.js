@@ -4,13 +4,13 @@ import { describe, expect, it } from 'vitest';
 
 import { makeFolder } from '../helpers.js';
 
-describe('init command tests', () => {
+describe('create command tests', () => {
 	it('creates a presentation in the current directory', async () => {
 		const { cwd } = await makeFolder({ files: {} });
 
 		const result = await execa({
 			cwd,
-		})`${process.cwd()}/bin/auto-reveal init`;
+		})`${process.cwd()}/bin/auto-reveal create`;
 
 		const fixtures = fixturify.readSync(cwd);
 

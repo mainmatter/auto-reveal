@@ -12,7 +12,7 @@ Create presentations from Markdown files and let auto-reveal worry about configu
 
 ```sh
 # Setup `./slides/000.md` and `package.json`
-npx auto-reveal init
+npx auto-reveal create
 
 # Start the presentation server
 npm start
