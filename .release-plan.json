@@ -2,25 +2,17 @@
   "solution": {
     "auto-reveal": {
       "impact": "minor",
-      "oldVersion": "0.4.0",
-      "newVersion": "0.5.0",
+      "oldVersion": "0.5.0",
+      "newVersion": "0.6.0",
       "tagName": "latest",
       "constraints": [
         {
           "impact": "minor",
           "reason": "Appears in changelog section :rocket: Enhancement"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
         }
       ],
       "pkgJSONPath": "./package.json"
     }
   },
-  "description": "## Release (2025-03-25)\n\n* auto-reveal 0.5.0 (minor)\n\n#### :rocket: Enhancement\n* `auto-reveal`\n  * [#65](https://github.com/mainmatter/auto-reveal/pull/65) Allow auto-reveal to launch without relying on installing a theme ([@pichfl](https://github.com/pichfl))\n  * [#64](https://github.com/mainmatter/auto-reveal/pull/64) Make port configurable ([@pichfl](https://github.com/pichfl))\n  * [#59](https://github.com/mainmatter/auto-reveal/pull/59) Update dependencies ([@pichfl](https://github.com/pichfl))\n\n#### :bug: Bug Fix\n* `auto-reveal`\n  * [#68](https://github.com/mainmatter/auto-reveal/pull/68) Make start the default command for auto-reveal ([@pichfl](https://github.com/pichfl))\n  * [#56](https://github.com/mainmatter/auto-reveal/pull/56) Bugfix: Don't crash when devDependencies are not defined ([@pichfl](https://github.com/pichfl))\n\n#### :house: Internal\n* `auto-reveal`\n  * [#66](https://github.com/mainmatter/auto-reveal/pull/66) add a basic default theme test ([@mansona](https://github.com/mansona))\n  * [#63](https://github.com/mainmatter/auto-reveal/pull/63) Re-organize commander code ([@pichfl](https://github.com/pichfl))\n  * [#60](https://github.com/mainmatter/auto-reveal/pull/60) Add vitest ([@pichfl](https://github.com/pichfl))\n\n#### Committers: 2\n- Chris Manson ([@mansona](https://github.com/mansona))\n- Florian Pichler ([@pichfl](https://github.com/pichfl))\n"
+  "description": "## Release (2025-03-27)\n\n* auto-reveal 0.6.0 (minor)\n\n#### :rocket: Enhancement\n* `auto-reveal`\n  * [#73](https://github.com/mainmatter/auto-reveal/pull/73) Add `add` command to create new slide files ([@pichfl](https://github.com/pichfl))\n  * [#72](https://github.com/mainmatter/auto-reveal/pull/72) Rename (and alias) init to create ([@pichfl](https://github.com/pichfl))\n  * [#70](https://github.com/mainmatter/auto-reveal/pull/70) Add `init` command to quickly setup new presentations ([@pichfl](https://github.com/pichfl))\n\n#### Committers: 1\n- Florian Pichler ([@pichfl](https://github.com/pichfl))\n"
 }
