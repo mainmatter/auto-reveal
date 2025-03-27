@@ -1,5 +1,18 @@
 # Changelog
 
+## Release (2025-03-27)
+
+* auto-reveal 0.6.0 (minor)
+
+#### :rocket: Enhancement
+* `auto-reveal`
+  * [#73](https://github.com/mainmatter/auto-reveal/pull/73) Add `add` command to create new slide files ([@pichfl](https://github.com/pichfl))
+  * [#72](https://github.com/mainmatter/auto-reveal/pull/72) Rename (and alias) init to create ([@pichfl](https://github.com/pichfl))
+  * [#70](https://github.com/mainmatter/auto-reveal/pull/70) Add `init` command to quickly setup new presentations ([@pichfl](https://github.com/pichfl))
+
+#### Committers: 1
+- Florian Pichler ([@pichfl](https://github.com/pichfl))
+
 ## Release (2025-03-25)
 
 * auto-reveal 0.5.0 (minor)
