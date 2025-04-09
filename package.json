@@ -37,7 +37,7 @@
     "tmp": "^0.2.3",
     "vite": "6.2.5",
     "vite-plugin-ejs": "1.7.0",
-    "vite-plugin-static-copy": "2.3.0"
+    "vite-plugin-static-copy": "2.3.1"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
