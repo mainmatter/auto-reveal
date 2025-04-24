@@ -1,7 +1,10 @@
 import Reveal from 'reveal.js';
 import Highlight from 'reveal.js/plugin/highlight/highlight.esm.js';
 import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js';
+import RevealMath from 'reveal.js/plugin/math/math.esm.js';
 import Notes from 'reveal.js/plugin/notes/notes.esm.js';
+import RevealSearch from 'reveal.js/plugin/search/search.esm.js';
+import Zoom from 'reveal.js/plugin/zoom/zoom.esm.js';
 
 import 'reveal.js/dist/reveal.css';
 
@@ -48,7 +51,7 @@ const preConfig = {
 
 const afterConfig = {
 	// Ensure plugins are always loaded and not touched by the theme configuraiton
-	plugins: [Markdown, Highlight, Notes],
+	plugins: [Markdown, Highlight, Notes, RevealMath, Zoom, RevealSearch],
 };
 
 deck.initialize({
