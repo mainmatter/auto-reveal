@@ -1,0 +1,4 @@
+@layer default, config, reveal, theme, presentation;
+
+@import "reveal.js/dist/reveal.css" layer(reveal);
+@import "@theme";
