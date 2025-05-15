@@ -46,13 +46,13 @@
     "release-plan": "0.16.0",
     "vitest": "^3.0.0"
   },
-  "packageManager": "pnpm@10.9.0",
+  "packageManager": "pnpm@10.11.0",
   "engines": {
     "node": ">=20"
   },
   "volta": {
     "node": "22.15.1",
-    "pnpm": "10.9.0"
+    "pnpm": "10.11.0"
   },
   "directories": {
     "lib": "lib"
