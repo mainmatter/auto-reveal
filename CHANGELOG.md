@@ -1,5 +1,25 @@
 # Changelog
 
+## Release (2025-05-19)
+
+* auto-reveal 0.7.0 (minor)
+
+#### :rocket: Enhancement
+* `auto-reveal`
+  * [#86](https://github.com/mainmatter/auto-reveal/pull/86) Enable additional Reveal.js plugins ([@pichfl](https://github.com/pichfl))
+
+#### :bug: Bug Fix
+* `auto-reveal`
+  * [#96](https://github.com/mainmatter/auto-reveal/pull/96) fix loading location of config.json and add a test ([@mansona](https://github.com/mansona))
+
+#### :house: Internal
+* `auto-reveal`
+  * [#94](https://github.com/mainmatter/auto-reveal/pull/94) add a demo for auto-reveal ([@mansona](https://github.com/mansona))
+
+#### Committers: 2
+- Chris Manson ([@mansona](https://github.com/mansona))
+- Florian Pichler ([@pichfl](https://github.com/pichfl))
+
 ## Release (2025-03-27)
 
 * auto-reveal 0.6.0 (minor)
