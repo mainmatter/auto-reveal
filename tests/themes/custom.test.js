@@ -45,4 +45,34 @@ describe('custom theme tests', () => {
 			'background-color:#234567',
 		);
 	});
+
+	it('loads the config from the right place when theme is in a folder', async () => {
+		const theme = new Project('auto-reveal-theme-basic', '0.0.1', {
+			files: {
+				css: {
+					'theme.css': 'body { background-color: #234567; }',
+				},
+				'config.json': `{
+					"backgroundTransition": "monkey-face-really-exists"
+				}`,
+			},
+		});
+		theme.pkg.main = 'css/theme.css';
+
+		const { cwd } = await makeProject({ files: {}, theme });
+
+		const result = await execa({
+			cwd,
+		})`./node_modules/.bin/auto-reveal build`;
+
+		expect(result.exitCode).to.equal(0);
+
+		expect(await getFileContents('dist/assets/index*.css', cwd)).to.include(
+			'background-color:#234567',
+		);
+
+		expect(await getFileContents('dist/assets/index*.js', cwd)).to.include(
+			'backgroundTransition:"monkey-face-really-exists"',
+		);
+	});
 });
