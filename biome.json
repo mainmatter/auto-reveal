@@ -1,29 +1,21 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.4.0/schema.json",
+	"$schema": "https://biomejs.dev/schemas/2.0.0/schema.json",
 	"formatter": {
 		"enabled": true,
 		"indentStyle": "tab",
-		"lineWidth": 80
+		"lineWidth": 80,
+		"includes": ["{bin,lib,src,tests}/**/*.{cjs,mjs,js,md,json,yml,yaml}"]
 	},
 	"linter": {
 		"enabled": true,
 		"rules": {
 			"recommended": true
-		}
+		},
+		"includes": ["{bin,lib,src,tests}/**/*.{cjs,mjs,js,md,json,yml,yaml}"]
 	},
 	"javascript": {
 		"formatter": {
 			"quoteStyle": "single"
 		}
-	},
-	"files": {
-		"ignore": [
-			"node_modules",
-			"dist",
-			".release-plan.json",
-			"package.json",
-			"CHANGELOG.md",
-			"pnpm-lock.yaml"
-		]
 	}
 }
