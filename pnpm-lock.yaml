@@ -47,7 +47,7 @@ importers:
         version: 1.0.0
       execa:
         specifier: ^9.5.2
-        version: 9.5.3
+        version: 9.6.0
       fixturify-project:
         specifier: ^7.1.3
         version: 7.1.3
@@ -1071,8 +1071,8 @@ packages:
     resolution: {integrity: sha512-8uSpZZocAZRBAPIEINJj3Lo9HyGitllczc27Eh5YYojjMFMn8yHMDMaUHE2Jqfq05D/wucwI4JGURyXt1vchyg==}
     engines: {node: '>=10'}
 
-  execa@9.5.3:
-    resolution: {integrity: sha512-QFNnTvU3UjgWFy8Ef9iDHvIdcgZ344ebkwYx4/KLbR+CKQA4xBaHzv+iRpp86QfMHP8faFQLh8iOc57215y4Rg==}
+  execa@9.6.0:
+    resolution: {integrity: sha512-jpWzZ1ZhwUmeWRhS7Qv3mhpOhLfwI+uAX4e5fOcXqwMR7EcJ0pj2kV1CVzHVMX/LphnKWD3LObjZCoJ71lKpHw==}
     engines: {node: ^18.19.0 || >=20.5.0}
 
   expect-type@1.2.1:
@@ -3342,7 +3342,7 @@ snapshots:
       signal-exit: 3.0.7
       strip-final-newline: 2.0.0
 
-  execa@9.5.3:
+  execa@9.6.0:
     dependencies:
       '@sindresorhus/merge-streams': 4.0.0
       cross-spawn: 7.0.6
@@ -4087,7 +4087,7 @@ snapshots:
       assert-never: 1.4.0
       chalk: 5.4.1
       cli-highlight: 2.1.11
-      execa: 9.5.3
+      execa: 9.6.0
       fs-extra: 11.3.0
       github-changelog: 2.0.0
       js-yaml: 4.1.0
