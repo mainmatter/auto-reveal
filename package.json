@@ -48,7 +48,7 @@
     "vite-plugin-static-copy": "3.0.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.0.4",
+    "@biomejs/biome": "2.0.5",
     "auto-reveal-theme-mainmatter": "^1.0.0",
     "execa": "^9.5.2",
     "fixturify-project": "^7.1.3",
