@@ -44,7 +44,7 @@ importers:
         version: 2.0.6
       auto-reveal-theme-mainmatter:
         specifier: ^1.0.0
-        version: 1.0.0
+        version: 1.1.0
       execa:
         specifier: ^9.5.2
         version: 9.6.0
@@ -829,8 +829,8 @@ packages:
     resolution: {integrity: sha512-+q/t7Ekv1EDY2l6Gda6LLiX14rU9TV20Wa3ofeQmwPFZbOMo9DXrLbOjFaaclkXKWidIaopwAObQDqwWtGUjqg==}
     engines: {node: '>= 4.0.0'}
 
-  auto-reveal-theme-mainmatter@1.0.0:
-    resolution: {integrity: sha512-BtV3lzENCd5KRrb4lDOO2gU/775JVrjei1vwVslGJgICQXfslziOG9b0hRwvp50yeXXM/1gw9eNsstJVuQbv4A==}
+  auto-reveal-theme-mainmatter@1.1.0:
+    resolution: {integrity: sha512-PhkP0FP170rTnnuyjZ0mvXO3QfKnBDJUDmG7XaNQ1LRG7HHQ9l5kTU0NdUz1MVVbj3Qj2GcUgRvIvaseCeZ93w==}
 
   babel-import-util@2.1.1:
     resolution: {integrity: sha512-3qBQWRjzP9NreSH/YrOEU1Lj5F60+pWSLP0kIdCWxjFHH7pX2YPHIxQ67el4gnMNfYoDxSDGcT0zpVlZ+gVtQA==}
@@ -3070,7 +3070,7 @@ snapshots:
 
   at-least-node@1.0.0: {}
 
-  auto-reveal-theme-mainmatter@1.0.0:
+  auto-reveal-theme-mainmatter@1.1.0:
     dependencies:
       '@yukaii/github-highlightjs-themes': 1.0.0
 
