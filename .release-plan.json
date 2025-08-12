@@ -1,26 +1,8 @@
 {
   "solution": {
     "auto-reveal": {
-      "impact": "minor",
-      "oldVersion": "0.6.0",
-      "newVersion": "0.7.0",
-      "tagName": "latest",
-      "constraints": [
-        {
-          "impact": "minor",
-          "reason": "Appears in changelog section :rocket: Enhancement"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :bug: Bug Fix"
-        },
-        {
-          "impact": "patch",
-          "reason": "Appears in changelog section :house: Internal"
-        }
-      ],
-      "pkgJSONPath": "./package.json"
+      "oldVersion": "0.7.0"
     }
   },
-  "description": "## Release (2025-05-19)\n\n* auto-reveal 0.7.0 (minor)\n\n#### :rocket: Enhancement\n* `auto-reveal`\n  * [#86](https://github.com/mainmatter/auto-reveal/pull/86) Enable additional Reveal.js plugins ([@pichfl](https://github.com/pichfl))\n\n#### :bug: Bug Fix\n* `auto-reveal`\n  * [#96](https://github.com/mainmatter/auto-reveal/pull/96) fix loading location of config.json and add a test ([@mansona](https://github.com/mansona))\n\n#### :house: Internal\n* `auto-reveal`\n  * [#94](https://github.com/mainmatter/auto-reveal/pull/94) add a demo for auto-reveal ([@mansona](https://github.com/mansona))\n\n#### Committers: 2\n- Chris Manson ([@mansona](https://github.com/mansona))\n- Florian Pichler ([@pichfl](https://github.com/pichfl))\n"
+  "description": "\n\n\n\n"
 }
