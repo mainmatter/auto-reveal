@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2025-05-19)
 
 * auto-reveal 0.7.0 (minor)
