@@ -6,9 +6,8 @@ import Notes from 'reveal.js/plugin/notes/notes.esm.js';
 import RevealSearch from 'reveal.js/plugin/search/search.esm.js';
 import Zoom from 'reveal.js/plugin/zoom/zoom.esm.js';
 
-import 'reveal.js/dist/reveal.css';
+import './main.css';
 
-import '@theme';
 import themeConfig from 'virtual:auto-reveal/config';
 
 const markdownFiles = import.meta.glob('slides/*.md', {
