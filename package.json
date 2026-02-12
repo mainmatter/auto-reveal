@@ -36,7 +36,7 @@
     "CHANGELOG.md"
   ],
   "dependencies": {
-    "commander": "^13.1.0",
+    "commander": "^14.0.0",
     "fixturify": "^3.0.0",
     "globby": "^14.1.0",
     "lodash-es": "^4.17.21",
